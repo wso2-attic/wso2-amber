@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.apache.amber</groupId>
-    <artifactId>amber-parent</artifactId>
+    <artifactId>amber</artifactId>
     <version>0.22.1358727-wso2v4</version>
   </parent>
   <artifactId>openid-connect</artifactId>

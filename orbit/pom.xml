@@ -22,7 +22,7 @@
 
     <parent>
         <groupId>org.wso2.carbon</groupId>
-        <artifactId>amber-parent</artifactId>
+        <artifactId>amber</artifactId>
         <version>0.22.1358727.wso2v4</version>
 	<relativePath>../pom.xml</relativePath>
     </parent>
@@ -30,7 +30,8 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.apache.amber.wso2</groupId>
     <artifactId>amber</artifactId>
-    <version>0.22.1358727.wso2v4</version>
+    <!--version>0.22.1358727.wso2v4-SNAPSHOT</version-->
+    <version>${amber.version}</version>
     <packaging>bundle</packaging>
     <name>Orbit - Apache Amber</name>
     <description>
