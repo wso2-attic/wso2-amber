@@ -16,11 +16,12 @@
 	<parent>
     		<groupId>org.apache.amber</groupId>
     		<artifactId>amber-oauth2-parent</artifactId>
-     		<version>0.22.1358727-wso2v4</version>
+     		<version>${amber.version}</version>
+    		<relativePath>../pom.xml</relativePath>
   	</parent>
 
 	<artifactId>oltu-oauth2-jwt</artifactId>
-
+  	<version>${amber.version}</version>
 	<name>Apache Oltu: OAuth 2.0 Implementation - JWT</name>
 
 	<dependencies>

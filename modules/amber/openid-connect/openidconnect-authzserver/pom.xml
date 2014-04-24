@@ -3,20 +3,22 @@
   <parent>
     <groupId>org.apache.amber</groupId>
     <artifactId>openid-connect</artifactId>
-    <version>0.22.1358727-wso2v4</version>
+   <version>${amber.version}</version>
+    <relativePath>../pom.xml</relativePath>
   </parent>
   <artifactId>openidconnect-authzserver</artifactId>
   <name>OpenID Connect Authorization Server</name>
+  <version>${amber.version}</version>
   <dependencies>
   	<dependency>
   		<groupId>org.apache.amber</groupId>
   		<artifactId>oauth2-authzserver</artifactId>
-  		<version>0.22.1358727-wso2v4</version>
+  		<version>${amber.version}</version>
   	</dependency>
   	<dependency>
   		<groupId>org.apache.amber</groupId>
   		<artifactId>oltu-oauth2-jwt</artifactId>
-  		<version>0.22.1358727-wso2v4</version>
+  		<version>${amber.version}</version>
   	</dependency>
   </dependencies>
 </project>
