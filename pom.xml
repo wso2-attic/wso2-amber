@@ -28,7 +28,7 @@ under the License.
          Amber Parent.
     </description>
 
-    <repositories>
+    <!--repositories>
         <repository>
             <id>wso2-nexus</id>
             <name>WSO2 internal Repository</name>
@@ -63,7 +63,7 @@ under the License.
                 <enabled>false</enabled>
             </releases>
         </repository>
-    </repositories>
+    </repositories-->
 
     <distributionManagement>
         <repository>

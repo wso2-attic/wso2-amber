@@ -105,7 +105,7 @@
         </plugins>
     </build>
 
-    <!--distributionManagement>
+    <distributionManagement>
         <repository>
             <id>wso2.releases</id>
             <name>WSO2 internal Repository</name>
@@ -117,7 +117,7 @@
             <name>WSO2 Snapshot Repository</name>
             <url>http://maven.wso2.org/nexus/content/repositories/snapshots/</url>
         </snapshotRepository>
-    </distributionManagement-->
+    </distributionManagement>
 
     <!--repositories>
         <repository>
