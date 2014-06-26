@@ -23,15 +23,14 @@
     <!--parent>
         <groupId>org.wso2.carbon</groupId>
         <artifactId>amber</artifactId>
-        <version>0.22.1358727.wso2v4-SNAPSHOT</version>
+        <version>${amber.version}</version>
 	<relativePath>../pom.xml</relativePath>
     </parent-->
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.apache.amber.wso2</groupId>
     <artifactId>amber</artifactId>
-    <!--version>0.22.1358727.wso2v4-SNAPSHOT</version-->
-    <version>0.22.1358727.wso2v4-SNAPSHOT</version>
+    <version>${amber.orbit.version}</version>
     <packaging>bundle</packaging>
     <name>Orbit - Apache Amber</name>
     <description>
@@ -157,6 +156,7 @@
     </repositories-->
 
     <properties>
-        <amber.version>0.22.1358727.wso2v4-SNAPSHOT</amber.version>
+        <amber.version>0.22.1358727-wso2v4-SNAPSHOT</amber.version>
+        <amber.orbit.version>0.22.1358727.wso2v4-SNAPSHOT</amber.orbit.version>
     </properties>
 </project>
