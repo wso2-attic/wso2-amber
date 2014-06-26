@@ -22,12 +22,12 @@
   <parent>
     <artifactId>amber-oauth2-parent</artifactId>
     <groupId>org.apache.amber</groupId>
-   <version>0.22.1358727.wso2v4-SNAPSHOT</version>
+   <version>${amber.version}</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
   <artifactId>oauth2-client</artifactId>
-  <version>0.22.1358727.wso2v4-SNAPSHOT</version>
+  <version>${amber.version}</version>
   <name>Apache Amber: OAuth 2.0 Implementation - Client</name>
 
   <dependencies>
