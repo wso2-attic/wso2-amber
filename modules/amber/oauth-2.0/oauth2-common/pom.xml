@@ -22,12 +22,11 @@
   <parent>
     <groupId>org.apache.amber</groupId>
     <artifactId>amber-oauth2-parent</artifactId>
-    <version>${amber.version}</version>
+    <version>0.22.1358727-wso2v6-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
   <artifactId>oauth2-common</artifactId>
-  <version>${amber.version}</version>
   <name>Apache Amber: OAuth 2.0 Implementation - Common</name>
   <description>OAuth 2.0 library - Common</description>
 
