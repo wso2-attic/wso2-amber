@@ -82,6 +82,15 @@ public class IDTokenBuilder {
 		return this;
 	}
 
+    /**
+     * @param exp
+     *            the exp to set
+     */
+    public IDTokenBuilder setExpiration(long exp) {
+        claims.put(IDToken.EXP, exp);
+        return this;
+    }
+
 	/**
 	 * @param iat
 	 *            the iat to set
@@ -90,6 +99,15 @@ public class IDTokenBuilder {
 		claims.put(IDToken.IAT, iat);
 		return this;
 	}
+
+    /**
+     * @param iat
+     *            the iat to set
+     */
+    public IDTokenBuilder setIssuedAt(long iat) {
+        claims.put(IDToken.IAT, iat);
+        return this;
+    }
 
 	/**
 	 * @param nonce
@@ -119,13 +137,22 @@ public class IDTokenBuilder {
 	}
 
 	/**
-	 * @param auth_time
+	 * @param authTime
 	 *            the auth_time to set
 	 */
 	public IDTokenBuilder setAuthTime(String authTime) {
 		claims.put(IDToken.AUTH_TIME, authTime);
 		return this;
 	}
+
+    /**
+     * @param authTime
+     *            the auth_time to set
+     */
+    public IDTokenBuilder setAuthTime(long authTime) {
+        claims.put(IDToken.AUTH_TIME, authTime);
+        return this;
+    }
 
 	/**
 	 * @param at_hash

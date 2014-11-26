@@ -28,13 +28,12 @@
     <parent>
         <groupId>org.wso2.carbon</groupId>
         <artifactId>amber</artifactId>
-        <version>${amber.version}</version>
+        <version>0.22.1358727-wso2v6-SNAPSHOT</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
   <groupId>org.apache.amber</groupId>
   <artifactId>amber</artifactId>
-  <version>${amber.version}</version>
   <packaging>pom</packaging>
 
   <name>Apache Amber</name>
