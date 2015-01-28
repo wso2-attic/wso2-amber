@@ -20,10 +20,10 @@ under the License.
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.wso2.carbon</groupId>
+    <groupId>org.wso2.amber</groupId>
     <artifactId>amber</artifactId>
     <packaging>pom</packaging>
-    <version>0.22.1358727-wso2v6-SNAPSHOT</version>
+    <version>0.22.1358727-wso2v6</version>
     <description>
          Amber Parent.
     </description>
@@ -86,7 +86,7 @@ under the License.
     </modules>
 
     <properties>
-        <amber.version>0.22.1358727-wso2v6-SNAPSHOT</amber.version>
+        <amber.version>0.22.1358727-wso2v6</amber.version>
     </properties>
 
 </project>
