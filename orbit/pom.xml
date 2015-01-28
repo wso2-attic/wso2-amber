@@ -156,7 +156,7 @@
     </repositories-->
 
     <properties>
-        <amber.version>0.22.1358727-wso2v6-SNAPSHOT</amber.version>
-        <amber.orbit.version>0.22.1358727.wso2v6-SNAPSHOT</amber.orbit.version>
+        <amber.version>0.22.1358727-wso2v6</amber.version>
+        <amber.orbit.version>0.22.1358727.wso2v6</amber.orbit.version>
     </properties>
 </project>
