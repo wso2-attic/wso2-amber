@@ -26,9 +26,9 @@
   </parent-->
 
     <parent>
-        <groupId>org.wso2.amber</groupId>
+        <groupId>org.wso2.carbon</groupId>
         <artifactId>amber</artifactId>
-        <version>0.22.1358727-wso2v6</version>
+        <version>0.22.1358727-wso2v6-SNAPSHOT</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
