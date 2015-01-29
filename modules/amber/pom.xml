@@ -27,7 +27,7 @@
     <parent>
         <groupId>org.apache.amber</groupId>
         <artifactId>wso2.amber</artifactId>
-        <version>0.22.1358727-wso2v6</version>
+        <version>0.22.1358727-wso2v7-SNAPSHOT</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
@@ -243,7 +243,7 @@
     <developerConnection>scm:svn:https://svn.apache.org/repos/asf/incubator/amber/trunk/</developerConnection>
     <connection>scm:svn:https://svn.apache.org/repos/asf/incubator/amber/trunk/</connection>
     <url>https://svn.apache.org/repos/asf/incubator/amber/trunk/</url>
-    <tag>wso2-amber-0.22.1358727-wso2v6</tag>
+    <tag>HEAD</tag>
   </scm>
   <issueManagement>
     <system>JIRA</system>

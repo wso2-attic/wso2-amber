@@ -28,7 +28,7 @@ under the License.
     <groupId>org.apache.amber</groupId>
     <artifactId>wso2.amber</artifactId>
     <packaging>pom</packaging>
-    <version>0.22.1358727-wso2v6</version>
+    <version>0.22.1358727-wso2v7-SNAPSHOT</version>
     <description>
          Amber Parent.
     </description>
@@ -291,7 +291,7 @@ under the License.
         <url>https://github.com/wso2/wso2-axiom.git</url>
         <developerConnection>scm:git:https://github.com/wso2/wso2-amber.git</developerConnection>
         <connection>scm:git:https://github.com/wso2/wso2-amber.git</connection>
-        <tag>wso2-amber-0.22.1358727-wso2v6</tag>
+        <tag>HEAD</tag>
     </scm>
 
 

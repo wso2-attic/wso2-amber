@@ -28,7 +28,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.apache.amber.wso2</groupId>
     <artifactId>amber</artifactId>
-    <version>0.22.1358727.wso2v6</version>
+    <version>0.22.1358727.wso2v7-SNAPSHOT</version>
     <packaging>bundle</packaging>
     <name>Orbit - Apache Amber</name>
     <description>
@@ -118,7 +118,7 @@
         <url>https://github.com/wso2/wso2-axiom.git</url>
         <developerConnection>scm:git:https://github.com/wso2/wso2-amber.git</developerConnection>
         <connection>scm:git:https://github.com/wso2/wso2-amber.git</connection>
-        <tag>wso2-amber-0.22.1358727-wso2v6</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <!--repositories>
@@ -173,7 +173,7 @@
 
 
     <properties>
-        <amber.version>0.22.1358727-wso2v6</amber.version>
+        <amber.version>0.22.1358727-wso2v7-SNAPSHOT</amber.version>
         <amber.orbit.version>0.22.1358727.wso2v6-SNAPSHOT</amber.orbit.version>
         <project.scm.id>my-scm-server</project.scm.id>
     </properties>
