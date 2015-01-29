@@ -33,19 +33,16 @@
     <dependency>
       <groupId>org.apache.amber</groupId>
       <artifactId>oauth2-common</artifactId>
-      <version>${project.version}</version>
     </dependency>
 
     <dependency>
       <groupId>org.apache.amber</groupId>
       <artifactId>oauth2-client</artifactId>
-      <version>${project.version}</version>
     </dependency>
 
     <dependency>
       <groupId>org.apache.amber</groupId>
       <artifactId>oauth2-dynamicreg-common</artifactId>
-      <version>${project.version}</version>
     </dependency>
   </dependencies>
 
