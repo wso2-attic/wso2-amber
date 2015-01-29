@@ -20,8 +20,8 @@ under the License.
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.wso2.carbon</groupId>
-    <artifactId>amber</artifactId>
+    <groupId>org.apache.amber</groupId>
+    <artifactId>wso2.amber</artifactId>
     <packaging>pom</packaging>
     <version>0.22.1358727-wso2v6-SNAPSHOT</version>
     <description>
@@ -79,6 +79,177 @@ under the License.
         </snapshotRepository>
     </distributionManagement>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.apache.amber</groupId>
+                <artifactId>oauth2-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.codehaus.jettison</groupId>
+                <artifactId>jettison</artifactId>
+                <version>${jettison.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-rt-frontend-jaxrs</artifactId>
+                <version>${cxf.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-testutils</artifactId>
+                <version>${cxf.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-jcl</artifactId>
+                <version>${slf4j.jcl.version}</version>
+            </dependency>
+            <dependency>
+                <artifactId>oauth2-dynamicreg-common</artifactId>
+                <groupId>org.apache.amber</groupId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <artifactId>oauth2-dynamicreg-common</artifactId>
+                <groupId>org.apache.amber</groupId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <artifactId>oauth2-dynamicreg-client</artifactId>
+                <groupId>org.apache.amber</groupId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${org.springframework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-webmvc</artifactId>
+                <version>${org.springframework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.tuckey</groupId>
+                <artifactId>urlrewritefilter</artifactId>
+                <version>${urlrewritefilter.version}</version>
+            </dependency>
+            <dependency>
+                <artifactId>standard</artifactId>
+                <groupId>taglibs</groupId>
+                <version>${taglibs.version}</version>
+                <type>jar</type>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.amber</groupId>
+                <artifactId>oauth2-client</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.amber</groupId>
+                <artifactId>oauth2-test-utils</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${httpclient.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.amber</groupId>
+                <artifactId>oauth2-authzserver</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.amber</groupId>
+                <artifactId>oauth2-httpclient4</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.amber</groupId>
+                <artifactId>oauth2-resourceserver</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.amber</groupId>
+                <artifactId>oauth2-dynamicreg-server</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-webapp</artifactId>
+                <version>${jetty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-rt-transports-http</artifactId>
+                <version>${cxf.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-rt-transports-http-jetty</artifactId>
+                <version>${cxf.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-core</artifactId>
+                <version>${org.springframework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-beans</artifactId>
+                <version>${org.springframework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>${commons.codec.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j.api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-log4j12</artifactId>
+                <version>${slf4j.log4j12.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-mock</artifactId>
+                <version>${spring-mock.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.easymock</groupId>
+                <artifactId>easymock</artifactId>
+                <version>${easy-mock.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>servlet-api</artifactId>
+                <version>${servlet-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>${log4j.properties}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-logging</groupId>
+                <artifactId>commons-logging</artifactId>
+                <version>${commons.logging.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <modules>
         <!--module>modules/amber/oauth-2.0/oauth2-common</module-->
         <module>modules/amber</module>
@@ -87,6 +258,26 @@ under the License.
 
     <properties>
         <amber.version>0.22.1358727-wso2v6-SNAPSHOT</amber.version>
+        <cxf.version>2.2.10</cxf.version>
+        <org.springframework.version>3.0.3.RELEASE</org.springframework.version>
+        <spring-mock.version>2.0.8</spring-mock.version>
+        <easy-mock.version>3.0</easy-mock.version>
+        <servlet-api.version>2.5</servlet-api.version>
+        <jettison.version>1.2</jettison.version>
+        <jetty.version>7.1.5.v20100705</jetty.version>
+        <pmd.version>2.5</pmd.version>
+        <slf4j.jcl.version>1.6.0</slf4j.jcl.version>
+        <urlrewritefilter.version>3.1.0</urlrewritefilter.version>
+        <taglibs.version>1.1.2</taglibs.version>
+        <httpclient.version>4.1.2</httpclient.version>
+        <commons.codec.version>1.2</commons.codec.version>
+        <slf4j.api.version>1.6.1</slf4j.api.version>
+        <slf4j.log4j12.version>1.6.0</slf4j.log4j12.version>
+        <log4j.properties>1.2.15</log4j.properties>
+        <commons.logging.version>1.1.1</commons.logging.version>
+        <junit.version>4.10</junit.version>
+        <amber.version>0.22.1358727-wso2v6-SNAPSHOT</amber.version>
+        <amber.orbit.version>0.22.1358727.wso2v6-SNAPSHOT</amber.orbit.version>
     </properties>
 
 </project>
