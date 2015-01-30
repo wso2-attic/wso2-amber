@@ -18,12 +18,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 
-    <!--parent>
-        <groupId>org.wso2.carbon</groupId>
-        <artifactId>amber</artifactId>
-        <version>${amber.version}</version>
+    <parent>
+        <groupId>org.apache.amber</groupId>
+        <artifactId>wso2.amber</artifactId>
+        <version>0.22.1358727-wso2v7-SNAPSHOT</version>
 	<relativePath>../pom.xml</relativePath>
-    </parent-->
+    </parent>
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.apache.amber.wso2</groupId>
@@ -113,68 +113,4 @@
                 </plugin>
             </plugins>
     </build>
-
-    <scm>
-        <url>https://github.com/wso2/wso2-axiom.git</url>
-        <developerConnection>scm:git:https://github.com/wso2/wso2-amber.git</developerConnection>
-        <connection>scm:git:https://github.com/wso2/wso2-amber.git</connection>
-        <tag>HEAD</tag>
-    </scm>
-
-    <!--repositories>
-        <repository>
-            <id>wso2-nexus</id>
-            <name>WSO2 internal Repository</name>
-            <url>http://maven.wso2.org/nexus/content/groups/wso2-public/</url>
-            <releases>
-                <enabled>true</enabled>
-                <updatePolicy>daily</updatePolicy>
-                <checksumPolicy>ignore</checksumPolicy>
-            </releases>
-        </repository>
-
-        <repository>
-            <id>wso2.releases</id>
-            <name>WSO2 internal Repository</name>
-            <url>http://maven.wso2.org/nexus/content/repositories/releases/</url>
-            <releases>
-                <enabled>true</enabled>
-                <updatePolicy>daily</updatePolicy>
-                <checksumPolicy>ignore</checksumPolicy>
-            </releases>
-        </repository>
-
-        <repository>
-            <id>wso2.snapshots</id>
-            <name>WSO2 Snapshot Repository</name>
-            <url>http://maven.wso2.org/nexus/content/repositories/snapshots/</url>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>daily</updatePolicy>
-            </snapshots>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-        </repository>
-    </repositories-->
-
-    <distributionManagement>
-        <repository>
-            <id>nexus-releases</id>
-            <name>WSO2 Release Distribution Repository</name>
-            <url>http://maven.wso2.org/nexus/service/local/staging/deploy/maven2/</url>
-        </repository>
-        <snapshotRepository>
-            <id>wso2-maven2-snapshot-repository</id>
-            <name>WSO2 Maven2 Snapshot Repository</name>
-            <url>http://maven.wso2.org/nexus/content/repositories/snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
-
-
-    <properties>
-        <amber.version>0.22.1358727-wso2v7-SNAPSHOT</amber.version>
-        <amber.orbit.version>0.22.1358727.wso2v6-SNAPSHOT</amber.orbit.version>
-        <project.scm.id>my-scm-server</project.scm.id>
-    </properties>
 </project>

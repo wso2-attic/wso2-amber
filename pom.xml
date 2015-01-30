@@ -75,7 +75,7 @@ under the License.
             <dependency>
                 <groupId>org.apache.amber</groupId>
                 <artifactId>oauth2-common</artifactId>
-                <version>${project.version}</version>
+                <version>${amber.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.codehaus.jettison</groupId>
@@ -100,17 +100,12 @@ under the License.
             <dependency>
                 <artifactId>oauth2-dynamicreg-common</artifactId>
                 <groupId>org.apache.amber</groupId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <artifactId>oauth2-dynamicreg-common</artifactId>
-                <groupId>org.apache.amber</groupId>
-                <version>${project.version}</version>
+                <version>${amber.version}</version>
             </dependency>
             <dependency>
                 <artifactId>oauth2-dynamicreg-client</artifactId>
                 <groupId>org.apache.amber</groupId>
-                <version>${project.version}</version>
+                <version>${amber.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
@@ -136,12 +131,12 @@ under the License.
             <dependency>
                 <groupId>org.apache.amber</groupId>
                 <artifactId>oauth2-client</artifactId>
-                <version>${project.version}</version>
+                <version>${amber.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.amber</groupId>
                 <artifactId>oauth2-test-utils</artifactId>
-                <version>${project.version}</version>
+                <version>${amber.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
@@ -151,22 +146,22 @@ under the License.
             <dependency>
                 <groupId>org.apache.amber</groupId>
                 <artifactId>oauth2-authzserver</artifactId>
-                <version>${project.version}</version>
+                <version>${amber.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.amber</groupId>
                 <artifactId>oauth2-httpclient4</artifactId>
-                <version>${project.version}</version>
+                <version>${amber.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.amber</groupId>
                 <artifactId>oauth2-resourceserver</artifactId>
-                <version>${project.version}</version>
+                <version>${amber.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.amber</groupId>
                 <artifactId>oauth2-dynamicreg-server</artifactId>
-                <version>${project.version}</version>
+                <version>${amber.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.eclipse.jetty</groupId>
@@ -248,7 +243,7 @@ under the License.
     </modules>
 
     <properties>
-        <amber.version>0.22.1358727-wso2v6-SNAPSHOT</amber.version>
+        <amber.version>0.22.1358727-wso2v7-SNAPSHOT</amber.version>
         <cxf.version>2.2.10</cxf.version>
         <org.springframework.version>3.0.3.RELEASE</org.springframework.version>
         <spring-mock.version>2.0.8</spring-mock.version>
@@ -293,19 +288,5 @@ under the License.
         <connection>scm:git:https://github.com/wso2/wso2-amber.git</connection>
         <tag>HEAD</tag>
     </scm>
-
-
-    <distributionManagement>
-        <repository>
-            <id>nexus-releases</id>
-            <name>WSO2 Release Distribution Repository</name>
-            <url>http://maven.wso2.org/nexus/service/local/staging/deploy/maven2/</url>
-        </repository>
-        <snapshotRepository>
-            <id>wso2-maven2-snapshot-repository</id>
-            <name>WSO2 Maven2 Snapshot Repository</name>
-            <url>http://maven.wso2.org/nexus/content/repositories/snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
 
 </project>
