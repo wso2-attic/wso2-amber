@@ -3,7 +3,7 @@
   <parent>
     <groupId>org.apache.amber</groupId>
     <artifactId>amber</artifactId>
-    <version>0.22.1358727-wso2v7-SNAPSHOT</version>
+    <version>0.22.1358727-wso2v7</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <artifactId>openid-connect</artifactId>
