@@ -21,7 +21,7 @@
   <parent>
     <artifactId>amber-oauth2-parent</artifactId>
     <groupId>org.apache.amber</groupId>
-   <version>0.22.1358727-wso2v8-SNAPSHOT</version>
+   <version>0.22.1358727-wso2v7-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
