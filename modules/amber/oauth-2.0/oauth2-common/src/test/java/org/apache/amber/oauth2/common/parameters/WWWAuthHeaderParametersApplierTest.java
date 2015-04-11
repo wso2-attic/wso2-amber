@@ -29,11 +29,6 @@ import org.apache.amber.oauth2.common.message.OAuthResponse;
 import org.junit.Assert;
 import org.junit.Test;
 
-/**
- *
- *
- *
- */
 public class WWWAuthHeaderParametersApplierTest {
 
     @Test
@@ -55,11 +50,8 @@ public class WWWAuthHeaderParametersApplierTest {
         Assert.assertNotNull(res);
         String header = res.getHeader(OAuth.HeaderType.WWW_AUTHENTICATE);
         Assert.assertNotNull(header);
-        Assert.assertEquals(OAuth.OAUTH_HEADER_NAME
-            + " scope=\"s1 s2 s3\",error_uri=\"http://www.example.com/error\",error=\"invalid_token\"",
-            header);
-
-
+        Assert.assertTrue(header, header.contains("Bearer scope=\"s1 s2 s3\""));
+        Assert.assertTrue(header, header.contains("error_uri=\"http://www.example.com/error\""));
+        Assert.assertTrue(header, header.contains("error=\"invalid_token\""));
     }
-
 }

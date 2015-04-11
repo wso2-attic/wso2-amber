@@ -21,11 +21,6 @@
 
 package org.apache.amber.oauth2.common;
 
-import java.util.HashMap;
-import java.util.Map;
-
-import javax.xml.stream.XMLStreamReader;
-
 import org.apache.amber.oauth2.common.error.OAuthError;
 import org.apache.amber.oauth2.common.utils.JSONUtils;
 import org.apache.amber.oauth2.common.utils.OAuthUtils;
@@ -35,11 +30,10 @@ import org.codehaus.jettison.mapped.MappedXMLStreamReader;
 import org.junit.Assert;
 import org.junit.Test;
 
-/**
- *
- *
- *
- */
+import javax.xml.stream.XMLStreamReader;
+import java.util.HashMap;
+import java.util.Map;
+
 public class OAuthUtilsTest extends Assert {
 
     @Test
@@ -71,7 +65,7 @@ public class OAuthUtilsTest extends Assert {
         entries.put("error", "invalid_token");
 
         String header = OAuthUtils.encodeOAuthHeader(entries);
-        assertEquals("Bearer error=\"invalid_token\",realm=\"Some Example Realm\"", header);
-
+        assertTrue(header, header.contains("error=\"invalid_token\""));
+        assertTrue(header, header.contains("realm=\"Some Example Realm\""));
     }
 }

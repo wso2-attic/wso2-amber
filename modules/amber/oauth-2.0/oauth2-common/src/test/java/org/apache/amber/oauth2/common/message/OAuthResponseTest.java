@@ -21,35 +21,27 @@
 
 package org.apache.amber.oauth2.common.message;
 
-import org.apache.amber.oauth2.common.message.OAuthResponse;
 import org.junit.Assert;
 import org.junit.Test;
 
-/**
- *
- *
- *
- */
 public class OAuthResponseTest {
-
-
     @Test
     public void testErrorResponse() throws Exception {
         OAuthResponse oAuthResponse = OAuthResponse.errorResponse(400)
-            .setError("error")
-            .setRealm("album")
-            .setState("ok")
-            .setErrorDescription("error_description")
-            .setErrorUri("http://example-uri")
-            .setParam("param", "value")
-            .buildJSONMessage();
+                .setError("error")
+                .setRealm("album")
+                .setState("ok")
+                .setErrorDescription("error_description")
+                .setErrorUri("http://example-uri")
+                .setParam("param", "value")
+                .buildJSONMessage();
 
         String body = oAuthResponse.getBody();
-        Assert.assertEquals(
-            "{\"error_uri\":\"http:\\/\\/example-uri\",\"error\":\"error\",\"param\":\"value\","
-                + "\"realm\":\"album\",\"state\":\"ok\",\"error_description\":\"error_description\"}",
-            body);
+        Assert.assertTrue(body, body.contains("error_uri\":\"http:\\/\\/example-uri"));
+        Assert.assertTrue(body, body.contains("error\":\"error"));
+        Assert.assertTrue(body, body.contains("param\":\"value"));
+        Assert.assertTrue(body, body.contains("realm\":\"album"));
+        Assert.assertTrue(body, body.contains("state\":\"ok"));
+        Assert.assertTrue(body, body.contains("error_description\":\"error_description"));
     }
-
-
 }
