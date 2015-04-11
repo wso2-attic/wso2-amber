@@ -34,11 +34,6 @@ import org.apache.amber.oauth2.common.message.OAuthResponse;
 import org.junit.Assert;
 import org.junit.Test;
 
-/**
- *
- *
- *
- */
 public class OAuthASResponseTest {
 
     @Test
@@ -54,11 +49,12 @@ public class OAuthASResponseTest {
             .buildQueryMessage();
 
         String url = oAuthResponse.getLocationUri();
-         
-        Assert.assertEquals("http://www.example.com?testValue=value2&code=code"
-            + "#access_token=access_111&state=ok&expires_in=400", url);
         Assert.assertEquals(200, oAuthResponse.getResponseStatus());
-
+        Assert.assertTrue(url, url.contains("http://www.example.com?"));
+        Assert.assertTrue(url, url.contains("access_token=access_111"));
+        Assert.assertTrue(url, url.contains("state=ok"));
+        Assert.assertTrue(url, url.contains("expires_in=400"));
+        Assert.assertTrue(url, url.contains("code=code"));
     }
     
     @Test
@@ -75,10 +71,13 @@ public class OAuthASResponseTest {
             .buildQueryMessage();
 
         String url = oAuthResponse.getLocationUri();
- 
-        Assert.assertEquals("http://www.example.com?testValue=value2&code=code"
-            + "#access_token=access_111&state=ok&expires_in=400", url);
         Assert.assertEquals(200, oAuthResponse.getResponseStatus());
+        Assert.assertTrue(url, url.contains("http://www.example.com?"));
+        Assert.assertTrue(url, url.contains("access_token=access_111"));
+        Assert.assertTrue(url, url.contains("state=ok"));
+        Assert.assertTrue(url, url.contains("expires_in=400"));
+        Assert.assertTrue(url, url.contains("code=code"));
+        Assert.assertTrue(url, url.contains("testValue=value2"));
 
     }
 
@@ -91,10 +90,9 @@ public class OAuthASResponseTest {
             .buildBodyMessage();
 
         String body = oAuthResponse.getBody();
-        Assert.assertEquals(
-            "expires_in=200&refresh_token=refresh_token2&access_token=access_token",
-            body);
-
+        Assert.assertTrue(body, body.contains("expires_in=200"));
+        Assert.assertTrue(body, body.contains("refresh_token=refresh_token2"));
+        Assert.assertTrue(body, body.contains("access_token=access_token"));
     }
 
     @Test
@@ -105,10 +103,10 @@ public class OAuthASResponseTest {
             .buildBodyMessage();
 
         String body = oAuthResponse.getBody();
-        Assert.assertEquals(
-            "some_param=new_param&expires_in=200&refresh_token=refresh_token2&access_token=access_token",
-            body);
-
+        Assert.assertTrue(body, body.contains("some_param=new_param"));
+        Assert.assertTrue(body, body.contains("expires_in=200"));
+        Assert.assertTrue(body, body.contains("access_token=access_token"));
+        Assert.assertTrue(body, body.contains("refresh_token=refresh_token2"));
     }
 
     @Test
@@ -122,18 +120,20 @@ public class OAuthASResponseTest {
 
         OAuthResponse oAuthResponse = OAuthResponse.errorResponse(400).error(ex).buildJSONMessage();
 
-        Assert.assertEquals(
-            "{\"error_uri\":\"http:\\/\\/www.example.com\\/error\",\"error\":\"access_denied\",\""
-                + "error_description\":\"Access denied\"}",
-            oAuthResponse.getBody());
-
+        String body = oAuthResponse.getBody();
+        Assert.assertTrue(body, body.contains("\"error_uri\":\"http:\\/\\/www.example.com\\/error\""));
+        Assert.assertTrue(body, body.contains("\"error\":\"access_denied\""));
+        Assert.assertTrue(body, body.contains("\"error_description\":\"Access denied\""));
 
         oAuthResponse = OAuthResponse.errorResponse(500)
             .location("http://www.example.com/redirect?param2=true").error(ex).buildQueryMessage();
-        Assert.assertEquals(
-            "http://www.example.com/redirect?param2=true&error_uri=http%3A%2F%2Fwww.example.com%2Ferror"
-                + "&error=access_denied&error_description=Access+denied",
-            oAuthResponse.getLocationUri());
+
+        String locationUri = oAuthResponse.getLocationUri();
+        Assert.assertTrue(locationUri, locationUri.contains("http://www.example.com/redirect?"));
+        Assert.assertTrue(locationUri, locationUri.contains("param2=true"));
+        Assert.assertTrue(locationUri, locationUri.contains("error_uri=http%3A%2F%2Fwww.example.com%2Ferror"));
+        Assert.assertTrue(locationUri, locationUri.contains("error=access_denied"));
+        Assert.assertTrue(locationUri, locationUri.contains("error_description=Access+denied"));
     }
 
     @Test
@@ -146,10 +146,13 @@ public class OAuthASResponseTest {
 
         OAuthResponse oAuthResponse = OAuthResponse.errorResponse(500)
             .location("http://www.example.com/redirect?param2=true").error(ex).buildQueryMessage();
-        Assert.assertEquals(
-            "http://www.example.com/redirect?param2=true&error_uri=http%3A%2F%2Fwww.example.com%2Ferror"
-                + "&error=access_denied&error_description=Access+denied",
-            oAuthResponse.getLocationUri());
+
+        String locationUri = oAuthResponse.getLocationUri();
+        Assert.assertTrue(locationUri, locationUri.contains("http://www.example.com/redirect?"));
+        Assert.assertTrue(locationUri, locationUri.contains("param2=true"));
+        Assert.assertTrue(locationUri, locationUri.contains("error_uri=http%3A%2F%2Fwww.example.com%2Ferror"));
+        Assert.assertTrue(locationUri, locationUri.contains("error=access_denied"));
+        Assert.assertTrue(locationUri, locationUri.contains("error_description=Access+denied"));
     }
 
     @Test
@@ -160,10 +163,13 @@ public class OAuthASResponseTest {
             .buildHeaderMessage();
 
         String header = oAuthResponse.getHeader(OAuth.HeaderType.WWW_AUTHENTICATE);
-        Assert.assertEquals("Bearer state=\"state_ok\",code=\"oauth_code\"", header);
+        Assert.assertTrue(header, header.contains("state=\"state_ok\""));
+        Assert.assertTrue(header, header.contains("code=\"oauth_code\""));
+
 
         header = oAuthResponse.getHeaders().get(OAuth.HeaderType.WWW_AUTHENTICATE);
-        Assert.assertEquals("Bearer state=\"state_ok\",code=\"oauth_code\"", header);
+        Assert.assertTrue(header, header.contains("state=\"state_ok\""));
+        Assert.assertTrue(header, header.contains("code=\"oauth_code\""));
     }
 
 }
