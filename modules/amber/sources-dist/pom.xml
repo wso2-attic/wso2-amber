@@ -30,7 +30,8 @@
   <name>Apache Amber :: Sources distribution module</name>
 
   <properties>
-    <assembly.finalName>apache-amber-${project.version}</assembly.finalName>
+    <amber.parent.version>0.22.1358727-wso2v7</amber.parent.version>
+    <assembly.finalName>apache-amber-${amber.parent.version}</assembly.finalName>
   </properties>
 
   <build>

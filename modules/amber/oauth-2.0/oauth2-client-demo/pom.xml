@@ -40,7 +40,7 @@
     <dependency>
       <artifactId>oauth2-common</artifactId>
       <groupId>org.apache.amber</groupId>
-      <version>${project.version}</version>
+      <version>${wso2.amber.version}</version>
     </dependency>
 
     <!-- OAuth Dynamic Registration Dependency -->
