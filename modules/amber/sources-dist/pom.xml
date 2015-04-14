@@ -21,7 +21,7 @@
   <parent>
     <groupId>org.apache.amber</groupId>
     <artifactId>amber-parent</artifactId>
-    <version>0.22.1358727-wso2v7</version>
+    <version>0.22.1358727-wso2v8-SNAPSHOT</version>
     <relativePath>../</relativePath>
   </parent>
 
@@ -30,7 +30,7 @@
   <name>Apache Amber :: Sources distribution module</name>
 
   <properties>
-    <assembly.finalName>apache-amber-${project.version}</assembly.finalName>
+    <assembly.finalName>apache-amber-${amber.version}</assembly.finalName>
   </properties>
 
   <build>
