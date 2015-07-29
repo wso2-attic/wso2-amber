@@ -244,6 +244,7 @@ under the License.
 
     <properties>
         <amber.version>0.22.1358727-wso2v8-SNAPSHOT</amber.version>
+        <amber.pkg.export.version>0.22.1358727.wso2v8-SNAPSHOT</amber.pkg.export.version>
         <cxf.version>2.2.10</cxf.version>
         <org.springframework.version>3.0.3.RELEASE</org.springframework.version>
         <spring-mock.version>2.0.8</spring-mock.version>
