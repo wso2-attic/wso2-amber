@@ -67,11 +67,6 @@
             <artifactId>oauth2-client</artifactId>
             <version>${amber.version}</version>
         </dependency>
-        <!--dependency>
-               <groupId>org.apache.amber</groupId>
-               <artifactId>openidconnect-common</artifactId>
-               <version>0.22.1358727-wso2v3</version>
-           </dependency-->
     </dependencies>
 
     <build>
@@ -86,8 +81,8 @@
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Name>${project.artifactId}</Bundle-Name>
                         <Export-Package>
-                            org.apache.amber.*;version=${amber.version},
-                            org.apache.oltu.*;version=${amber.version},
+                            org.apache.amber.*;version=${amber.pkg.export.version},
+                            org.apache.oltu.*;version=${amber.pkg.export.version},
                             -split-package:=merge-first
                         </Export-Package>
                         <Import-Package>
