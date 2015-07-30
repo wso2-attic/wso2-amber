@@ -28,7 +28,7 @@ under the License.
     <groupId>org.apache.amber</groupId>
     <artifactId>wso2.amber</artifactId>
     <packaging>pom</packaging>
-    <version>0.22.1358727-wso2v8</version>
+    <version>0.22.1358727-wso2v9-SNAPSHOT</version>
     <description>
          Amber Parent.
     </description>
@@ -243,7 +243,7 @@ under the License.
     </modules>
 
     <properties>
-        <amber.version>0.22.1358727-wso2v8</amber.version>
+        <amber.version>0.22.1358727-wso2v9-SNAPSHOT</amber.version>
         <amber.pkg.export.version>0.22.1358727.wso2v8</amber.pkg.export.version>
         <cxf.version>2.2.10</cxf.version>
         <org.springframework.version>3.0.3.RELEASE</org.springframework.version>
@@ -287,7 +287,7 @@ under the License.
         <url>https://github.com/wso2/wso2-axiom.git</url>
         <developerConnection>scm:git:https://github.com/wso2/wso2-amber.git</developerConnection>
         <connection>scm:git:https://github.com/wso2/wso2-amber.git</connection>
-        <tag>v0.22.1358727-wso2v8</tag>
+        <tag>HEAD</tag>
     </scm>
 
 </project>

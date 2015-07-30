@@ -21,14 +21,14 @@
     <parent>
         <groupId>org.apache.amber</groupId>
         <artifactId>wso2.amber</artifactId>
-        <version>0.22.1358727-wso2v8</version>
+        <version>0.22.1358727-wso2v9-SNAPSHOT</version>
 	<relativePath>../pom.xml</relativePath>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.apache.amber.wso2</groupId>
     <artifactId>amber</artifactId>
-    <version>0.22.1358727.wso2v8</version>
+    <version>0.22.1358727.wso2v9-SNAPSHOT</version>
     <packaging>bundle</packaging>
     <name>Orbit - Apache Amber</name>
     <description>
