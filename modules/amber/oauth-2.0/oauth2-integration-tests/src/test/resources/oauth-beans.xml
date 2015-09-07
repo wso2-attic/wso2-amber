@@ -34,7 +34,7 @@
     <!--<import resource="classpath:META-INF/cxf/cxf-extension-xml.xml"/>-->
 
     <!--OAuth Authorization Server Extended - Client Registration -->
-    <jaxrs:server id="oauthServerExt" address="http://localhost:9000/auth/oauth2ext/">
+    <jaxrs:server id="oauthServerExt" address="http://localhost:9410/auth/oauth2ext/">
         <jaxrs:serviceBeans>
             <ref bean="registrationEndpoint"/>
         </jaxrs:serviceBeans>
@@ -44,7 +44,7 @@
           class="org.apache.amber.oauth2.integration.endpoints.RegistrationEndpoint"/>
 
     <!--OAuth Authorization Server -->
-    <jaxrs:server id="oauthServer" address="http://localhost:9001/auth/oauth2/">
+    <jaxrs:server id="oauthServer" address="http://localhost:9411/auth/oauth2/">
         <jaxrs:serviceBeans>
             <ref bean="authzEndpoint"/>
             <ref bean="tokenEndpoint"/>
@@ -56,7 +56,7 @@
     <bean id="tokenEndpoint" class="org.apache.amber.oauth2.integration.endpoints.TokenEndpoint"/>
 
     <!--OAuth Client -->
-    <jaxrs:server id="oauthClient" address="http://localhost:9002/auth/oauth2/">
+    <jaxrs:server id="oauthClient" address="http://localhost:9412/auth/oauth2/">
         <jaxrs:serviceBeans>
             <ref bean="clientRedirect"/>
         </jaxrs:serviceBeans>
@@ -65,7 +65,7 @@
     <bean id="clientRedirect" class="org.apache.amber.oauth2.integration.EndUserAuthorizationTest"/>
 
     <!-- Resource Server -->
-    <jaxrs:server id="resourceServer" address="http://localhost:9003/resource_server/">
+    <jaxrs:server id="resourceServer" address="http://localhost:9413/resource_server/">
         <jaxrs:serviceBeans>
             <ref bean="resourceHeaderEndpoint"/>
             <ref bean="resourceBodyEndpoint"/>
