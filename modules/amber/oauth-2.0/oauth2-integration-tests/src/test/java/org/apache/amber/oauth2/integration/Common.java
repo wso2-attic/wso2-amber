@@ -95,10 +95,10 @@ public final class Common {
         + " </samlp:AuthnRequest>";
     public static final String ASSERTION_TYPE = "http://xml.coverpages.org/saml.html";
 
-    public static final String ACCESS_TOKEN_ENDPOINT = "http://localhost:9001/auth/oauth2/token";
-    public static final String AUTHORIZATION_ENPOINT = "http://localhost:9001/auth/oauth2/authz";
-    public static final String REDIRECT_URL = "http://localhost:9002/auth/oauth2/redirect";
-    public static final String RESOURCE_SERVER = "http://localhost:9003/resource_server";
+    public static final String ACCESS_TOKEN_ENDPOINT = "http://localhost:9411/auth/oauth2/token";
+    public static final String AUTHORIZATION_ENPOINT = "http://localhost:9411/auth/oauth2/authz";
+    public static final String REDIRECT_URL = "http://localhost:9412/auth/oauth2/redirect";
+    public static final String RESOURCE_SERVER = "http://localhost:9413/resource_server";
     public static final String PROTECTED_RESOURCE_HEADER = "/resource_header";
     public static final String PROTECTED_RESOURCE_BODY = "/resource_body";
     public static final String PROTECTED_RESOURCE_QUERY = "/resource_query";
